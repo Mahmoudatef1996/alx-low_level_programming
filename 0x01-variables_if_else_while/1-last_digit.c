@@ -18,15 +18,15 @@ int main(void)
 	/* your code goes there */
 	int num = n;
 
-	while (n > 10)
+	while (num > 10)
 	{
-		n = n % 10;
+		num = num % 10;
 	}
-	if (n > 5)
-		printf("Last digit of %d and is greater than 5\n", num);
-	else if (n == 0)
-		printf("Last digit of %d and is 0\n", num);
+	if (num > 5)
+		printf("Last digit of %d and is greater than 5\n", n);
+	else if (num == 0)
+		printf("Last digit of %d and is 0\n", n);
 	else
-		printf("Last digit of %d and is less than 6 and not 0\n", num);
+		printf("Last digit of %d and is less than 6 and not 0\n", n);
 	return (0);
 }
