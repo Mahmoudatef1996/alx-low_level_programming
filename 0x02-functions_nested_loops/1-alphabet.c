@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-
+#include "1-main.h"
 /**
  * main - Entry of the program
  *
