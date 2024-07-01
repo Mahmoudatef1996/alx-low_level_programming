@@ -21,10 +21,18 @@ void times_table(void)
 			}
 			else
 			{
-				_putchar(' ');
-				_putchar('0' + mul);
+				if (i == 0 && j == 0)
+				{
+					_putchar('0' + mul);
+				}
+				else
+				{
+					_putchar(' ');
+					_putchar('0' + mul);
+				}
 			}
-			if (j == 9 || j ==0)
+
+			if (j == 9)
 				continue;
 			_putchar(',');
 			_putchar(' ');
