@@ -1,12 +1,28 @@
 #include <stdio.h>
 #include "1-main.h"
 /**
+ * print_alphabet - printing alphapet
+ *
+ * Return: no return
+ */
+void print_alphabet(void)
+{
+        char ch = 'a';
+
+        while (ch <= 'z')
+        {
+                _putchar(ch);
+                ch++;
+        }
+        _putchar('\n');
+}
+/**
  * main - Entry of the program
  *
  * Return: always 0
  */
 int main(void)
 {
-	void print_alphabet();
+	print_alphabet();
 	return (0);
 }
