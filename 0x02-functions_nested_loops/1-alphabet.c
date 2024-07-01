@@ -1,12 +1,18 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - Entry of the program
+ * print_alphabet - printing alphapet
  *
- * Return: always 0
+ * Return: no return
  */
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+        char ch = 'a';
+
+        while (ch <= 'z')
+        {
+                _putchar(ch);
+                ch++;
+        }
+        _putchar('\n');
 }
