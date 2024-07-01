@@ -11,3 +11,15 @@ int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
+
+void print_alphabet(void)
+{
+        char ch = 'a';
+
+        while (ch <= 'z')
+        {
+                _putchar(ch);
+                ch++;
+        }
+        _putchar('\n');
+}
