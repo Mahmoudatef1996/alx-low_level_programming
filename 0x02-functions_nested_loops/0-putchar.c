@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * Main - Entry of the program
+ * main - Entry of the program
  *
  * Return: always return 0 (Sucess)
  */
@@ -16,5 +16,6 @@ int main(void)
 	_putchar('h');
 	_putchar('a');
 	_putchar('r');
+	_putchar('\n');
 	return (0);
 }
