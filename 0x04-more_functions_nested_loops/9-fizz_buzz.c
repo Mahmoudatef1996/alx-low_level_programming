@@ -23,8 +23,8 @@ int main(void)
 		{
 			if (i == 100)
 			{
-				continue;
 				printf("Buzz");
+				continue;
 			}
 			printf("Buzz ");
 		}
