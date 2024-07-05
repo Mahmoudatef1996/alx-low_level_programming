@@ -14,7 +14,7 @@ void puts2(char *str)
 
 	while (*str != '\0')
 	{
-		size ++;
+		size++;
 		str++;
 	}
 	str = str - size;
@@ -24,4 +24,5 @@ void puts2(char *str)
 		_putchar(ch);
 		i++;
 	}
+	_putchar('\n');
 }
