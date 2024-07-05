@@ -15,16 +15,16 @@ void puts_half(char *str)
 		str++;
 		size++;
 	}
-	str = str - size;
 	if (size % 2 == 0)
 		n = size / 2;
 	else
 		n = (size - 1) / 2;
-
-	for (size = 0 ; str[size + n] != '\0'; size++)
+	str = str - n;
+	while (*str != '\0')
 	{
-		ch = str[size + n];
+		ch = *str;
 		_putchar(ch);
+		str++;
 	}
 	_putchar('\n');
 }
