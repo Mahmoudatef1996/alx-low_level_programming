@@ -28,6 +28,8 @@ char *cap_string(char *ch)
 				*ch = *ch + 32;
 			i++;
 		}
+		if (*ch == '\t')
+			*ch = ' ';
 		ch++;
 		len++;
 	}
