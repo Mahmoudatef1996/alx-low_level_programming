@@ -11,15 +11,18 @@ int main(void)
 
 	for (tens = 0; tens <= 9; tens++)
 	{
-		for (units = tens; units <= 9; units++)
+		for (units = 0 ; units <= 9; units++)
 		{
 			putchar(tens + '0');
 			putchar(units + '0');
+
 			 if (tens != units)
 			 {
 				  putchar(',');
 				  putchar(' ');
 			 }
+			 else
+				 putchar(' ');
 		}
 	}
 	putchar('\n');
