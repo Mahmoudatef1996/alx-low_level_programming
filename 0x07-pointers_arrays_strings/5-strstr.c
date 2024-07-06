@@ -3,13 +3,21 @@
  * _strstr -  function that locates a substring
  * @haystack: the first parameter
  * @needle: the second parameter
- * Return : pointer of char
+ * Return: pointer of char
  */
 char *_strstr(char *haystack, char *needle)
 {
 	char *start;
 	int i = 0;
 
+	while (*needle != '\0')
+	{
+		i++;
+		needle++;
+	}
+	if (i == 0)
+		return (NULL);
+	needle = needle - i;
 	while (*haystack != '\0')
 	{
 		if (*haystack == *needle)
