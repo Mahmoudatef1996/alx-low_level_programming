@@ -1,4 +1,4 @@
-/** 
+/**
  * _memset - function that fills memory with a constant byte.
  * @s: the string
  * @b: char
