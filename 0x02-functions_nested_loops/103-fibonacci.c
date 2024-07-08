@@ -18,7 +18,7 @@ void fibonacci(int n)
 			if (a % 2 == 0)
 				sum += a;
 		}
-		else 
+		else
 			break;
 		c = a + b;
 		a = b;
