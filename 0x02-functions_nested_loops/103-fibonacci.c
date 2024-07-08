@@ -14,7 +14,10 @@ void fibonacci(int n)
 	for (i = 0; i < n; i++)
 	{
 		if (sum <= 4000000)
-			sum += a;
+		{
+			if (a % 2 == 0)
+				sum += a;
+		}
 		else 
 			break;
 		c = a + b;
