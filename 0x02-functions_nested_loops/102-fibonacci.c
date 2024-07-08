@@ -7,12 +7,12 @@
  */
 void fibonacci(int n)
 {
-	long long a = 1, b = 2, c;
+	long a = 1, b = 2, c;
 	int i;
 
 	for (i = 0; i < n; i++)
 	{
-		printf("%lld", a);
+		printf("%ld", a);
 		if (i ==  n - 1)
 			continue;
 		printf(", ");
