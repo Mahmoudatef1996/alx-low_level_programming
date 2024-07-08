@@ -15,6 +15,8 @@ void fibonacci(int n)
 	{
 		if (sum <= 4000000)
 			sum += a;
+		else 
+			break;
 		c = a + b;
 		a = b;
 		b = c;
