@@ -12,7 +12,7 @@ void fibonacci(int n)
 	int i;
 
 	printf("%lu, %lu, ", t0, t1);
-	for (int i = 3; i <= 98; ++i)
+	for (i = 3; i <= 98; ++i)
 	{
 		next = t0 + t1;
 		if (i != n)
