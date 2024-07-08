@@ -15,4 +15,5 @@ int main(void)
 			sum += i;
 	}
 	pdintf("%d\n", sum);
+	return (0);
 }
