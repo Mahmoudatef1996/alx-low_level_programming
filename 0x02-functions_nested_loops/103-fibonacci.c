@@ -19,7 +19,7 @@ void fibonacci(int n)
 		a = b;
 		b = c;
 	}
-	printf("ld\n", sum);
+	printf("%ld\n", sum);
 
 }
 
