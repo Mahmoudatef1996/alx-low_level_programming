@@ -12,7 +12,7 @@ void fibonacci(int n)
 
 	for (i = 0; i < n; i++)
 	{
-		printf("%d", a);
+		printf("%lld", a);
 		if (i ==  n - 1)
 			continue;
 		printf(", ");
