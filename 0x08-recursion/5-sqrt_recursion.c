@@ -15,8 +15,8 @@ int _sqrt_recursion(int n)
 	int ans = 0;
 	int mid = start + (end - start) / 2;
 
-	if ( start <= end && mid * mid == num)
+	if ( start <= end && mid * mid == n)
 		return (mid);
-	else if ( mid * mid < num && start <= end)
+	else if ( mid * mid < n && start <= end)
 		_sqrt_recursion (mid);
 }
