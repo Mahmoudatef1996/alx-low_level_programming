@@ -50,7 +50,7 @@ char *str_concat(char *s1, char *s2)
 		con = malloc(sizeof(char) * len1);
 		if (con == NULL)
 			return (NULL);
-		while (*s1 != '0')
+		while (*s1 != '\0')
 		{
 			*con = *s1;
 			con++;
