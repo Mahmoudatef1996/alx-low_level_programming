@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 			if (n / 25)
 			{
 				c = n / 25;
-				n = n & 25;
+				n = n % 25;
 
 			}
 			if (n / 10)
