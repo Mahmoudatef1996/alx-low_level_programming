@@ -25,14 +25,14 @@ int slen(char *s)
  */
 char *str_concat(char *s1, char *s2)
 {
-	int len1 = slen(s1);
-	int len2 = slen(s2);
+	int len1, len2;
 	char *con;
 	
 	if ( s1 == NULL && s2 == NULL)
 		return (NULL);
 	if (s1 == NULL && s2 != NULL)
 	{
+		len2 = slen(s2);
 		con = malloc(sizeof(char) * len2);
 		if (con == NULL)
 			return (NULL);
@@ -47,6 +47,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	if (s1 != NULL && s2 == NULL)
 	{
+		len1 = slen(s1);
 		con = malloc(sizeof(char) * len1);
 		if (con == NULL)
 			return (NULL);
@@ -58,8 +59,9 @@ char *str_concat(char *s1, char *s2)
 		}
 		con = con - len1;
 		return (con);
-	}	
-
+	}
+	len1 = slen(s1);
+	len2 = slen(s2);
 	con = malloc(sizeof(char) * (len1 + len2 + 1));
 	if (con == NULL)
 		return (NULL);
