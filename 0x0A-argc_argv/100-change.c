@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
 				c = c + n / 2;
 				n = n % 2;
 			}
-			c = c + n % 2;
+			c = c + n;
 			printf("%d\n", c);
 		}
 	}
