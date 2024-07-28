@@ -29,7 +29,11 @@ char *str_concat(char *s1, char *s2)
 	char *con;
 	
 	if ( s1 == NULL && s2 == NULL)
-		return (NULL);
+	{
+		con = malloc(sizeof(char));
+		*con = '\0';
+		return (con);
+	}
 	if (s1 == NULL && s2 != NULL)
 	{
 		len2 = slen(s2);
