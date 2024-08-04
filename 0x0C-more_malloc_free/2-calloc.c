@@ -9,10 +9,13 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+	size_t i = nmemb * size;
+	void *ar;
+
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	unsigned int i = nmemb * size;
-	void *ar = malloc(i);
+
+	ar = malloc(i);
 
 	if (ar == NULL)
 		return (NULL);
