@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * array_range unction that creates an array of integers.
+ * array_range - unction that creates an array of integers.
  * @min: the min
  * @max: the max
  * Return: returns an array of integers
