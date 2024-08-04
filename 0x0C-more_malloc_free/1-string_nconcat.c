@@ -10,6 +10,8 @@ unsigned int slen(char *s)
 {
 	unsigned int len = 0;
 
+	if (s == NULL)
+		return (0);
 	while (*s != '\0')
 	{
 		len++;
