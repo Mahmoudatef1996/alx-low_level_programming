@@ -6,7 +6,7 @@
  * @s: the string s
  * Return: length
  */
-int slen (char *s)
+int slen(char *s)
 {
 	int size = 0;
 
@@ -42,19 +42,19 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(d);
 		return (NULL);
 	}
-	o = malloc(lo +1);
+	o = malloc(lo + 1);
 	if (o == NULL)
 	{
 		free(d);
 		free(n);
-		return(NULL);
+		return (NULL);
 	}
 	for (i = 0; i < ln; i++)
 		n[i] = name[i];
-	n[i]= '\0';
+	n[i] = '\0';
 	for (i = 0; i < lo; i++)
 		o[i] = owner[i];
-	o[i]= '\0';
+	o[i] = '\0';
 	d->name = n;
 	d->age = age;
 	d->owner = o;
