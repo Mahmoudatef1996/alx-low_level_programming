@@ -33,16 +33,16 @@ dog_t *new_dog(char *name, float age, char *owner)
 	char *n, *o;
 	int i;
 
-	d = malloc(sizeof(dog_t *));
+	d = malloc(sizeof(dog_t));
 	if (d == NULL)
 		return (NULL);
-	n = malloc(sizeof(char) * (ln + 1));
+	n = malloc(ln + 1);
 	if (n == NULL)
 	{
 		free(d);
 		return (NULL);
 	}
-	o = malloc(sizeof(char) * (lo+1));
+	o = malloc(lo +1);
 	if (o == NULL)
 	{
 		free(d);
