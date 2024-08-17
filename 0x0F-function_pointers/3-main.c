@@ -3,14 +3,15 @@
 #include "3-calc.h"
 /**
  * main - the entry of the program
- *
+ * @argc: the argc
+ * @argv: the argv
  * Return: always return 0
  */
 int main(int argc, char *argv[])
 {
 	int a, b;
 	int (*f)(int, int);
-	
+
 	if (argc != 4)
 	{
 		printf("Error\n");
@@ -18,11 +19,11 @@ int main(int argc, char *argv[])
 	}
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
-	
 	f = get_op_func(argv[2]);
 	if (f == NULL)
 	{
 		printf("Error\n");
+		exit(99);
 	}
 	if ((*argv[2] == '/' || *argv[2] == '%') && b == 0)
 	{
