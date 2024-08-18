@@ -3,33 +3,24 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * print_strings - function that print strings
+ * print_numbers - function that prints numbers
  * @separator: the char whic will be printed
  * @n: the number of strings to be printed
  * Return: no return
  */
-void print_strings(const char *separator, const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list args;
 	unsigned int i;
-	char *c;
+	int x;
 
-	va_start(args,n);
-	for (i = 0 ; i < n; i ++)
+	va_start(args, n);
+	for (i = 0 ; i < n; i++)
 	{
-		c = va_arg(args, char *);
-		if (i == 0 && c != NULL)
-			printf("%s", c);
-		else if (separator != NULL && c != NULL)
-		{
+		x = va_arg(args, int);
+		if (i != 0 && separator != NULL)
 			printf("%s", separator);
-			printf("%s", c);
-		}
-		if (i == 0 && c == NULL)
-			printf("nil");
-		else if (separator == NULL && c == NULL)
-			printf("nil");
-
+		printf("%d", x);
 	}
 	printf("\n");
 	va_end(args);
