@@ -27,7 +27,6 @@ void print_int(va_list args)
 void print_float(va_list args)
 {
 	printf("%f", va_arg(args, double));
-
 }
 /**
  * print_str - function that print string
@@ -37,6 +36,7 @@ void print_float(va_list args)
 void print_str(va_list args)
 {
 	char *c = va_arg(args, char *);
+
 	printf("%s", c ? c : "(nil)");
 }
 /**
@@ -55,13 +55,13 @@ void print_all(const char * const format, ...)
 		{'s', print_str},
 		{'\0', NULL}
 	};
-
 	va_start(args, format);
 	i = 0, x = 0;
 	while (format && format[i])
 	{
 		int j = 0;
-		if (i != 0 && x == 1)		
+
+		if (i != 0 && x == 1)
 			printf(", ");
 		while (format_specs[j].specifier && format[i] != format_specs[j].specifier)
 			j++;
