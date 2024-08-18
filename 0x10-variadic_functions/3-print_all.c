@@ -37,11 +37,7 @@ void print_float(va_list args)
 void print_str(va_list args)
 {
 	char *c = va_arg(args, char *);
-
-	if (c)
-		printf("%s", c);
-	else
-		printf("(nil)");
+	printf("%s", c ? c : "(nil)");
 }
 /**
  * print_all - function that prints all functions
@@ -65,8 +61,7 @@ void print_all(const char * const format, ...)
 	while (format && format[i])
 	{
 		int j = 0;
-
-		if (i != 0 && x == 1)
+		if (i != 0 && x == 1)		
 			printf(", ");
 		while (format_specs[j].specifier && format[i] != format_specs[j].specifier)
 			j++;
